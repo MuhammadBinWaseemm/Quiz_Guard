@@ -1,6 +1,6 @@
 # QuizGuard System
 
-# Algorithms and Data Structure Concepts Used
+QuizGuard is a C++ console application for creating, managing, and taking quizzes with secure user authentication. It uses SHA-256 hashing for password security, supports quiz optimization via greedy and knapsack algorithms, and employs linked lists, stacks, and queues for data management. Features include customizable themes, result tracking, and time-based quiz constraints.
 
 # Algorithms
 
@@ -73,6 +73,28 @@ Usage: Questions are added to the queue in createQuiz to store them sequentially
 Purpose: Stores question weights (time) and values (marks) for algorithmic processing.
 Structures: weights and values in Quiz for knapsack and greedy algorithms; selectedQuestions and selectedQuestionss for tracking chosen questions.
 Usage: Used in giveQuiz to pass data to knapsack and greedyQuizGuard.
+
+# How to Use
+
+Main Files
+
+QuizGuard.cpp is the main file that drives the program. AccountHash.cpp is a supplementary file for managing user account creation. It does not function independently.
+
+Audio Files
+
+.wav files are included for sound effects and are compatible with Dev-C++. Compatibility with other IDEs, such as Visual Studio, is not guaranteed.
+
+Setup Instructions
+
+Download QuizGuard.cpp, AccountHash.cpp, and the .wav files to your system. Ensure the .wav files are placed in a directory of your choice and update the file paths in the code. For example: PlaySound(TEXT("C:/Users/PC/Downloads/User.wav"), NULL, SND_FILENAME | SND_SYNC); Replace the file path with the location of the .wav file on your system. Placing them in the Downloads folder will minimize changes.
+
+Configuring Sound in Dev-C++
+
+To enable sound functionality in Dev-C++, follow these steps: Go to Tools > Compiler Options. Add -lwinmm to the linker commands.
+
+# Support
+
+If you encounter any issues or need assistance, feel free to contact me. I’ll be happy to help resolve any problems.
 
 
 
